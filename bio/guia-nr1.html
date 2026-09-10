@@ -1,0 +1,50 @@
+<!doctype html><html lang="pt-BR"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Guia NR-1 e riscos psicossociais · KMD Advocacia</title>
+<meta name="description" content="O que o PGR precisa contemplar depois da NR-1. Guia em PDF para empregadores.">
+<meta name="theme-color" content="#FAF8F6">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="kmd.css">
+<!-- Favicon -->
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+</head><body><main class="page inner">
+<header class="top"><a class="back" href="index.html" aria-label="Voltar"><i class="g" data-icon="lucide:chevron-left"></i></a><img src="assets/logo-kmd-horizontal-transparente.png" alt="KMD Advocacia e Consultoria Jurídica"><p class="ttl">Guia</p></header>
+<div id="formulario">
+<p class="eyebrow">Material gratuito</p>
+<h1 class="big" style="margin-top:10px">NR-1 e riscos psicossociais</h1>
+<div class="rule" style="margin:14px 0"></div>
+<p class="lead">As multas estão suspensas por 90 dias, mas a obrigação permanece. Este guia mostra o que o PGR precisa contemplar e como documentar.</p>
+<div class="faixa"><i>norma regulamentadora</i><strong>NR-1</strong><i>Ministério do Trabalho e Emprego</i></div>
+<h2 class="mid">O que tem dentro</h2>
+<div class="steps">
+<div><span>01</span><div><b>O que a norma exige</b><p>Riscos psicossociais no inventário e no plano de ação.</p></div></div>
+<div><span>02</span><div><b>Como identificar</b><p>Fontes de risco por função, da meta à jornada.</p></div></div>
+<div><span>03</span><div><b>O que registrar</b><p>Documentos que sustentam a defesa em fiscalização.</p></div></div>
+<div><span>04</span><div><b>Erros mais comuns</b><p>Cinco falhas que aparecem em autuação e em juízo.</p></div></div>
+</div>
+<form class="form" id="f">
+<div class="f" style="animation-delay:.1s"><label for="nome">Nome</label><input id="nome" autocomplete="name" required></div>
+<div class="f" style="animation-delay:.16s"><label for="email">E-mail corporativo</label><input id="email" type="email" inputmode="email" autocomplete="email" required></div>
+<div class="f" style="animation-delay:.22s"><label for="empresa">Empresa</label><input id="empresa" autocomplete="organization" required></div>
+<label class="chk f" style="animation-delay:.28s"><input type="checkbox" id="aceite"><span>Autorizo o envio do material e de análises do escritório por e-mail.</span></label>
+<button class="submit" type="submit" id="enviar" disabled data-rip>Solicitar no site oficial</button>
+</form>
+</div>
+<div id="pronto" hidden><div class="ok"><span class="mark"><i class="g" data-icon="lucide:download"></i></span><h2 class="mid">Solicitação pronta</h2><p class="lead" style="max-width:32ch">Estamos abrindo o site oficial da KMD para você concluir o pedido pelo WhatsApp do escritório.</p><a class="cta-link" href="https://kmd.adv.br/">Ir para kmd.adv.br</a><a href="index.html" style="font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)">Voltar ao início</a></div></div>
+<footer class="foot"><p class="sig">KMD ADVOCACIA E CONSULTORIA JURÍDICA</p><p>As informações deste site possuem caráter exclusivamente informativo e não constituem promessa de resultado ou aconselhamento jurídico individualizado.</p><p>Krys Machado Deucher · OAB/SC 39.018 · Florianópolis, SC</p></footer>
+</main>
+<script src="icons.js"></script>
+<script>
+const ac=document.getElementById('aceite'),bt=document.getElementById('enviar');
+ac.addEventListener('change',()=>bt.disabled=!ac.checked);
+document.getElementById('f').addEventListener('submit',e=>{
+  e.preventDefault();
+  document.getElementById('formulario').hidden=true;
+  document.getElementById('pronto').hidden=false;
+  pintaIcones();scrollTo(0,0);
+  setTimeout(()=>location.href='https://kmd.adv.br/',1600);
+});
+</script></body></html>

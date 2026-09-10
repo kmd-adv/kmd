@@ -1,0 +1,41 @@
+<!doctype html><html lang="pt-BR"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Análises · KMD Advocacia</title>
+<meta name="description" content="Decisões do STF e do TST e normas trabalhistas comentadas para empregadores.">
+<meta name="theme-color" content="#FAF8F6">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="kmd.css">
+<!-- Favicon -->
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+</head><body><main class="page inner">
+<header class="top"><a class="back" href="index.html" aria-label="Voltar"><i class="g" data-icon="lucide:chevron-left"></i></a><img src="assets/logo-kmd-horizontal-transparente.png" alt="KMD Advocacia e Consultoria Jurídica"><p class="ttl">Análises</p></header>
+<p class="eyebrow">Análises</p>
+<h1 class="big" style="margin-top:10px">Decisões comentadas para quem contrata</h1>
+<div class="rule" style="margin:14px 0"></div>
+<p class="lead" style="margin-bottom:20px">Publicamos no Instagram e detalhamos aqui. Filtre pelo tema.</p>
+<div class="chips" id="chips"><button class="chip on" data-t="tudo">Todos</button><button class="chip" data-t="rescisao">Rescisão</button><button class="chip" data-t="jornada">Jornada</button><button class="chip" data-t="saude">Saúde mental</button></div>
+<div class="feed" id="feed">
+<a class="card" data-t="rescisao" href="analise-tema-52.html"><span class="placa"><i>art.</i><strong>477</strong><i>CLT</i></span><div class="ct"><h3>Reconhecida a rescisão indireta em juízo, a multa continua devida</h3><time>Tema 52 do TST · há 2 dias</time></div></a>
+<a class="card" data-t="saude" href="#"><span class="placa"><i>norma</i><strong>NR-1</strong><i>MTE</i></span><div class="ct"><h3>Multas de riscos psicossociais suspensas por 90 dias</h3><time>Decisão do STF · há 3 semanas</time></div></a>
+<a class="card" data-t="jornada" href="#"><span class="placa"><i>art.</i><strong>74</strong><i>CLT</i></span><div class="ct"><h3>Controle de ponto por exceção: o que o TST tem aceito</h3><time>Jornada · há 1 mês</time></div></a>
+<a class="card" data-t="saude" href="#"><span class="placa"><i>art.</i><strong>483</strong><i>CLT</i></span><div class="ct"><h3>Assédio moral organizacional: metas agressivas e responsabilidade</h3><time>Saúde mental · há 2 meses</time></div></a>
+<a class="card" data-t="jornada" href="#"><span class="placa"><i>súmula</i><strong>444</strong><i>TST</i></span><div class="ct"><h3>Escala 12x36: quando a jornada é considerada válida</h3><time>Jornada · há 2 meses</time></div></a>
+<a class="card" data-t="rescisao" href="#"><span class="placa"><i>art.</i><strong>484</strong><i>CLT</i></span><div class="ct"><h3>Culpa recíproca: por que o pedido raramente prospera</h3><time>Rescisão · há 3 meses</time></div></a>
+</div>
+<div class="cta-end"><p>Quer receber as análises antes de irem para o Instagram?</p><a href="guia-nr1.html">Entrar na lista</a></div>
+<footer class="foot"><p class="sig">KMD ADVOCACIA E CONSULTORIA JURÍDICA</p><p>As informações deste site possuem caráter exclusivamente informativo e não constituem promessa de resultado ou aconselhamento jurídico individualizado.</p><p>Krys Machado Deucher · OAB/SC 39.018 · Florianópolis, SC</p></footer>
+</main>
+<script src="icons.js"></script>
+<script>
+const io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}}),{threshold:.15});
+document.querySelectorAll('.card').forEach((c,i)=>{c.style.transitionDelay=(i*70)+'ms';io.observe(c)});
+document.getElementById('chips').addEventListener('click',e=>{
+  const b=e.target.closest('.chip');if(!b)return;
+  document.querySelectorAll('.chip').forEach(c=>c.classList.toggle('on',c===b));
+  const t=b.dataset.t;
+  document.querySelectorAll('.card').forEach(c=>{const ok=t==='tudo'||c.dataset.t===t;c.style.display=ok?'':'none';if(ok)c.classList.add('in')});
+});
+</script></body></html>

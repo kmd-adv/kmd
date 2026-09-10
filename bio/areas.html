@@ -1,0 +1,37 @@
+<!doctype html><html lang="pt-BR"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Áreas de atuação · KMD Advocacia</title>
+<meta name="description" content="Compliance trabalhista, contencioso, consultivo, negociação coletiva, auditoria e treinamento de lideranças.">
+<meta name="theme-color" content="#FAF8F6">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="kmd.css">
+<!-- Favicon -->
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+</head><body><main class="page inner">
+<header class="top"><a class="back" href="index.html" aria-label="Voltar"><i class="g" data-icon="lucide:chevron-left"></i></a><img src="assets/logo-kmd-horizontal-transparente.png" alt="KMD Advocacia e Consultoria Jurídica"><p class="ttl">Áreas</p></header>
+<p class="eyebrow">Áreas de atuação</p>
+<h1 class="big" style="margin-top:10px">Atuação concentrada em direito do trabalho</h1>
+<div class="rule" style="margin:14px 0"></div>
+<p class="lead">Do preventivo ao contencioso, sempre do lado do empregador. Toque em uma área para ver o escopo.</p>
+<div class="acc">
+<div class="acc-i" style="animation-delay:0.08s"><button class="acc-b" data-rip><span class="ic"><i class="g" data-icon="lucide:shield-check"></i></span><b>Compliance trabalhista</b><span class="cv"><i class="g" data-icon="lucide:chevron-right"></i></span></button><div class="acc-p"><div><b>PGR e NR-1</b>Estruturação do Programa de Gerenciamento de Riscos com a inclusão dos riscos psicossociais, política interna de assédio e treinamento de lideranças, antes de a fiscalização chegar.</div></div></div>
+<div class="acc-i" style="animation-delay:0.14s"><button class="acc-b" data-rip><span class="ic"><i class="g" data-icon="lucide:gavel"></i></span><b>Contencioso trabalhista</b><span class="cv"><i class="g" data-icon="lucide:chevron-right"></i></span></button><div class="acc-p"><div><b>Defesa em juízo</b>Defesa em reclamatórias, acordos, execução e sustentação oral em segunda instância, com relatório de risco por processo.</div></div></div>
+<div class="acc-i" style="animation-delay:0.20s"><button class="acc-b" data-rip><span class="ic"><i class="g" data-icon="lucide:file-text"></i></span><b>Consultivo e contratos</b><span class="cv"><i class="g" data-icon="lucide:chevron-right"></i></span></button><div class="acc-p"><div><b>Rotina e documentos</b>Jornada, banco de horas, terceirização, contratação por pessoa jurídica, home office e desligamentos revisados caso a caso.</div></div></div>
+<div class="acc-i" style="animation-delay:0.26s"><button class="acc-b" data-rip><span class="ic"><i class="g" data-icon="lucide:users"></i></span><b>Negociação coletiva</b><span class="cv"><i class="g" data-icon="lucide:chevron-right"></i></span></button><div class="acc-p"><div><b>Sindicatos</b>Acompanhamento de convenções e acordos coletivos, mesas de negociação e cumprimento das cláusulas assumidas.</div></div></div>
+<div class="acc-i" style="animation-delay:0.32s"><button class="acc-b" data-rip><span class="ic"><i class="g" data-icon="lucide:search"></i></span><b>Auditoria e due diligence</b><span class="cv"><i class="g" data-icon="lucide:chevron-right"></i></span></button><div class="acc-p"><div><b>Passivo oculto</b>Diagnóstico do passivo trabalhista em operações societárias, com quantificação de contingência e plano de correção.</div></div></div>
+<div class="acc-i" style="animation-delay:0.38s"><button class="acc-b" data-rip><span class="ic"><i class="g" data-icon="lucide:graduation-cap"></i></span><b>Treinamento de lideranças</b><span class="cv"><i class="g" data-icon="lucide:chevron-right"></i></span></button><div class="acc-p"><div><b>Prevenção prática</b>Capacitação de gestores em jornada, assédio e saúde mental no trabalho, com material próprio e casos reais.</div></div></div>
+</div>
+<div class="cta-end"><p>Não sabe em qual área o seu caso entra? Descreva em duas linhas e nós dizemos.</p><a href="https://wa.me/5548999566924?text=Olá%2C%20Dra.%20Krys.%20Vim%20pelo%20site%20da%20KMD%20Advocacia%20e%20gostaria%20de%20falar%20com%20o%20escritório.">Falar com o escritório</a></div>
+<footer class="foot"><p class="sig">KMD ADVOCACIA E CONSULTORIA JURÍDICA</p><p>As informações deste site possuem caráter exclusivamente informativo e não constituem promessa de resultado ou aconselhamento jurídico individualizado.</p><p>Krys Machado Deucher · OAB/SC 39.018 · Florianópolis, SC</p></footer>
+</main>
+<script src="icons.js"></script>
+<script>
+document.querySelectorAll('.acc-b').forEach(b=>b.addEventListener('click',()=>{
+  const i=b.parentElement,p=i.querySelector('.acc-p'),aberto=i.classList.contains('on');
+  document.querySelectorAll('.acc-i.on').forEach(o=>{o.classList.remove('on');o.querySelector('.acc-p').style.maxHeight=0});
+  if(!aberto){i.classList.add('on');p.style.maxHeight=p.scrollHeight+'px'}
+}));
+</script></body></html>

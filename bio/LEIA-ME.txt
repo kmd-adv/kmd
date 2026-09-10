@@ -1,0 +1,40 @@
+SITE KMD · PÁGINA DE LINKS (mobile)
+
+COMO HOSPEDAR
+Suba o conteúdo desta pasta na raiz do domínio, mantendo a estrutura.
+A página inicial é index.html. Não precisa de build, servidor de aplicação
+nem banco: é HTML, CSS e um arquivo JS.
+
+ARQUIVOS
+  index.html               hub de links
+  areas.html               áreas de atuação (acordeão)
+  agendar.html             formulário de diagnóstico
+  analises.html            lista de análises, filtrável
+  analise-tema-52.html     página de leitura de uma análise
+  guia-nr1.html            captura de contato para o guia da NR-1
+  kmd.css                  folha de estilo única
+  icons.js                 carrega os ícones
+  assets/                  logo KMD
+
+DADOS JÁ APLICADOS
+  OAB/SC 39.018 · Krys Machado Deucher · Florianópolis, SC
+  krys.deucher@kmd.adv.br · (48) 99956-6924
+  Instagram do escritório, LinkedIn de Krys e de Enzo
+  Avaliações no Google, artigos no Migalhas, site kmd.adv.br
+
+FORMULÁRIOS
+  agendar.html e guia-nr1.html encaminham para kmd.adv.br, onde o contato é
+  concluído pelo WhatsApp do escritório. O resumo digitado fica guardado no
+  próprio navegador do visitante (localStorage), não é enviado por e-mail.
+  Se você quiser receber esses dados por e-mail, peça a ligação com um
+  serviço de formulário.
+
+FALTA DEFINIR
+  1. guia-nr1.html está no pacote mas não é linkada na página inicial.
+     Se o guia em PDF não existir, apague o arquivo.
+  2. Os ícones e as fontes vêm de CDN, então precisam de internet. Se quiser
+     tudo local, peça a versão com fontes e ícones embutidos.
+
+INTERNET E ÍCONES
+  Fontes: Google Fonts (Cinzel, Source Serif 4, Lato).
+  Ícones: Lucide e Font Awesome, via jsDelivr.
